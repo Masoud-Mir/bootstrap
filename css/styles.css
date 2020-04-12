@@ -28,3 +28,17 @@
     margin: 0px;
     color: #0f0f0f;
 }
+
+.about-row-content {
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
+}
