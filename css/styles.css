@@ -68,3 +68,10 @@ body {
 .carousel-caption {
     padding: 60px;
 }
+
+#carouselButton {
+    right: 15px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
