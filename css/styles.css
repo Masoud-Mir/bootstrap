@@ -75,3 +75,20 @@ body {
     bottom: 0px;
     z-index: 1;
 }
+
+.modal-header {
+    background-color: #512DA8;
+    color: #ddd;
+}
+
+.modal-header #closeloginButton {
+    color: #ddd;
+}
+
+.modal-header #closelogin {
+    color: #ddd;
+}
+
+.modal-body {
+    background-color: #D1C4E9;
+}

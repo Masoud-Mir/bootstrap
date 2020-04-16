@@ -36,19 +36,19 @@
                 </ol>
             </div>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="loginButton">
                 <span class="fa fa-sign-in"></span> Login</a>
             </span>
         </div>
     </nav>
-    <div class="modal" tabindex="-1" role="dialog" id="reservmodal">
+    <div class="modal" tabindex="-1" role="dialog" id="reservemodal">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title"><strong>Reserve Table</strong></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeloginButton">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -123,7 +123,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" id="closelogin">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -165,7 +165,7 @@
                     <img src="img/logo.png" alt="logo" class=" img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 d-flex align-items-center justify-content-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reservmodal" data-placement="bottom" href="#reserveform">Reserve Table</a>
+                    <a role="button" class="btn btn-block nav-link btn-warning" id="reserveButton">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -383,6 +383,20 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');
                 }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#reserveButton').click(function() {
+                $('#reservemodal').modal('toggle');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#loginButton').click(function() {
+                $('#loginModal').modal('toggle');
             });
         });
     </script>
